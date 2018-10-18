@@ -3,7 +3,7 @@ const prettierOptions = require('./prettier.config');
 
 module.exports = {
   parser: 'babel-eslint',
-  extends: ['airbnb', 'prettier', 'prettier/react'],
+  extends: ['airbnb', 'prettier', 'prettier/react',"react-app"], 
   plugins: ['prettier', 'react', 'jsx-a11y'],
   env: {
     browser: true,
@@ -58,6 +58,8 @@ module.exports = {
     'react/require-extension': 0,
     'react/self-closing-comp': 0,
     'react/sort-comp': 0,
+    //
+    'no-param-reassign':0
   },
   settings: {    
     'import/resolver': {
