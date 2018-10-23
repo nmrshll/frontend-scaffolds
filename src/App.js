@@ -1,28 +1,45 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Router } from 'react-static'
+import styled, { injectGlobal } from 'styled-components'
+import { hot } from 'react-hot-loader'
+import Routes from 'react-static-routes'
+//
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+injectGlobal`
+  * {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
   }
-}
+  body {
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
+      'Lucida Grande', sans-serif;
+    font-size: 16px;
+    margin:0;
+  }
+  @media print {
+    html, body {
+      /*changing width to 100% causes huge overflow and wrap*/
+      height:100vh; 
+      overflow: hidden;
+    }
+    ::-webkit-scrollbar { 
+      display: none;
+      position:absolute; 
+    }
+  }
+`
 
-export default App;
+const AppStyles = styled.div`
+  background-color: hsl(240, 100%, 99.3%);
+`
+
+const App = () => (
+  <Router>
+    <AppStyles>
+      <Routes />
+    </AppStyles>
+  </Router>
+)
+
+export default hot(module)(App)
