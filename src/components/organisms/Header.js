@@ -73,8 +73,9 @@ const Header = () => (
   <HeaderStyle>
     <ContentSection large className="content">
       <div className="name-row">
-        <Heading level={1} bold>Hello React static</Heading>
+        <Heading level={1} bold>Hi, I'm Nicolas Marshall</Heading>
       </div>
+      <Heading level={2}>I build web apps and help scale them</Heading>
     </ContentSection>
   </HeaderStyle>
 )
