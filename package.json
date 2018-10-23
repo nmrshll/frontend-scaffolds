@@ -4,13 +4,18 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "react-static start",
-    "stage": "react-static build --staging",
-    "build": "react-static build",
+    "build:css": "postcss src/styles/index.css -o src/index.css",
+    "watch:css": "postcss src/styles/index.css -o src/index.css -w",
+    "tailwind:css": "tailwind build src/styles/tailwind.src.css -c tailwind.config.js -o src/styles/tailwind.build.css",
+    "start": "npm run tailwind:css && react-static start",
+    "stage": "npm run tailwind:css && react-static build --staging",
+    "build": "npm run tailwind:css && react-static build",
     "serve": "serve dist -p 3000"
   },
   "dependencies": {
+    "autoprefixer": "^9.3.0",
     "axios": "^0.16.2",
+    "postcss-cli": "^6.0.1",
     "ramda": "^0.25.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -19,7 +24,8 @@
     "react-static": "^5.5.7",
     "react-svg": "^2.2.16",
     "recompose": "^0.26.0",
-    "styled-components": "^3"
+    "styled-components": "^3",
+    "tailwindcss": "^0.6.6"
   },
   "devDependencies": {
     "babel-plugin-root-import": "^5.1.0",
