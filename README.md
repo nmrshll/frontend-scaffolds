@@ -27,7 +27,7 @@ ghcp nmrshll/frontend-scaffolds <branch>
 
 Each branch of this project holds a different scaffold:
 
-- for an ejected create-react-app 2.0 setup: `ghcp nmrshll/frontend-scaffolds cra2-0`
+- for an ejected create-react-app 2.0 setup: `ghcp nmrshll/frontend-scaffolds CRA2.0`
 - for react with tailwindCSS: `ghcp nmrshll/frontend-scaffolds react-tailwind`
 - for react-static with tailwindCSS: `ghcp nmrshll/frontend-scaffolds react-static-tailwind`
 - for react-static: `ghcp nmrshll/frontend-scaffolds react-static`
