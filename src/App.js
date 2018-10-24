@@ -1,8 +1,8 @@
-import React from 'react'
-import { Router } from 'react-static'
-import styled, { injectGlobal } from 'styled-components'
-import { hot } from 'react-hot-loader'
-import Routes from 'react-static-routes'
+import React from 'react';
+import { Router } from 'react-static';
+import styled, { injectGlobal } from 'styled-components';
+import { hot } from 'react-hot-loader';
+import Routes from 'react-static-routes';
 //
 import '~/styles/tailwind.build.css';
 
@@ -29,11 +29,11 @@ injectGlobal`
       position:absolute; 
     }
   }
-`
+`;
 
 const AppStyles = styled.div`
   background-color: hsl(240, 100%, 99.3%);
-`
+`;
 
 const App = () => (
   <Router>
@@ -41,6 +41,6 @@ const App = () => (
       <Routes />
     </AppStyles>
   </Router>
-)
+);
 
-export default hot(module)(App)
+export default hot(module)(App);
