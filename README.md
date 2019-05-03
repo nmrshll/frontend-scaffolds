@@ -1,42 +1,54 @@
 # frontend-scaffolds
 
-The simple man's yeoman. For those who find yeoman and others too complicated when all you want to do is copy-paste a set of files and get started coding.
+Different sets of pre-configured front-end projects to copy-paste and get started coding. Each branch is one project/configuration.
 
-Requires no installation. Just run two commands and get going.
+## Installing
 
-## Quick start
+Install [saojs](https://saojs.org/guide/getting-started.html) by running 
 
-Run this to declare a shell function
+`yarn global add sao` (or `npm i -g sao`)
+
+([alternative bash function](./docs/alternative-bash-function.md))
+
+Add these lines to your `~/.bashrc`/`~/bash_profile` to install the ghcp function.
 
 ```sh
-ghcp() {
+export ghcp() {
   if [ ! -e ${2} ]; then echo "${2} set " && BRANCH=${2}; else BRANCH=master; fi
   curl "https://codeload.github.com/${1}/zip/${BRANCH}" | tar -xf - -C .
 }
 ```
 
-(alternatively you can add this function to your bashrc/bash_profile file to install it durably)
-
 Then run the following command in the folder you want to deploy the scaffold into:
 
 ```sh
-ghcp nmrshll/frontend-scaffolds <branch>
+ghcp nmrshll/frontend-scaffolds <branchName>
 ```
+
+## Usage
+
+Run the following command with the {branch_name} that holds the project you want to clone:
+
+```sh
+sao nmrshll/frontend-scaffolds#{branch_name}
+```
+
 
 ## Available scaffolds
 
 Each branch of this project holds a different scaffold:
 
-- for an ejected create-react-app 2.0 setup: `ghcp nmrshll/frontend-scaffolds CRA2.0`
-- for react with tailwindCSS: `ghcp nmrshll/frontend-scaffolds react-tailwind`
-- for react-static with tailwindCSS: `ghcp nmrshll/frontend-scaffolds react-static-tailwind`
-- for react-static: `ghcp nmrshll/frontend-scaffolds react-static`
-- for react-static with a graphql data source: `ghcp nmrshll/frontend-scaffolds react-static-graphql`
+- for an ejected create-react-app 2.0 setup: `sao nmrshll/frontend-scaffolds#CRA2.0`
+- for react with tailwindCSS: `sao nmrshll/frontend-scaffolds#react-tailwind`
+- for react-static with tailwindCSS: `sao nmrshll/frontend-scaffolds#react-static-tailwind`
+- for react-static: `sao nmrshll/frontend-scaffolds#react-static`
+- for react-static with a graphql data source: `sao nmrshll/frontend-scaffolds#react-static-graphql`
 
-Master has a create-react-app 2.0 setup: `ghcp nmrshll/frontend-scaffolds`
+Master has a create-react-app 2.0 setup: `sao nmrshll/frontend-scaffolds`
 
 ## Adding your own scaffolds
 
-For custom project scaffolds, just fork it (on github still) and edit your own branches.
+For custom project scaffolds, fork the repo, then edit any existing branch or add new ones.
 
-Notice how the command requires you to pass `username/repo` as the first argument ? Just replace that with `your_username/your_fork_repo_name` and you'll be good to go.
+Notice how the sao command requires you to pass `username/repo` as the first argument ? 
+To use your fork instead, replace that with `your_username/your_fork_repo_name` and you'll be good to go.
