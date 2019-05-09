@@ -32,6 +32,10 @@ Each branch of this project holds a different scaffold:
 
 Master has a create-react-app 2.0 setup: `sao nmrshll/frontend-scaffolds`
 
+For mobile:
+
+- CRNA + React-navigation: `sao nmrshll/frontend-scaffolds#crna-rnavigation`
+
 ## Adding your own scaffolds
 
 For custom project scaffolds, fork the repo, then edit any existing branch or add new ones.
