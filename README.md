@@ -29,6 +29,7 @@ Each branch of this project holds a different scaffold:
 - for react-static with tailwindCSS: `sao nmrshll/frontend-scaffolds#react-static-tailwind`
 - for react-static: `sao nmrshll/frontend-scaffolds#react-static`
 - for react-static with a graphql data source: `sao nmrshll/frontend-scaffolds#react-static-graphql`
+- for CRA3+jest+enzyme: `sao nmrshll/frontend-scaffolds#cra3-jest-enzyme`
 
 Master has a create-react-app 2.0 setup: `sao nmrshll/frontend-scaffolds`
 
