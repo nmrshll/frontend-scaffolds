@@ -2,17 +2,16 @@
 
 Different sets of pre-configured front-end projects to copy-paste and get started coding. Each branch is one project/configuration.
 
-## Installing
+## Installation
 
-Install [saojs](https://saojs.org/guide/getting-started.html) by running 
+This project requires:
 
-`yarn global add sao` 
-
-(or `npm i -g sao`)
-
-All it does is copy an existing repo/branch into a fresh repo on your machine.
-
-(requires [nodejs](https://nodejs.org/en/download/package-manager/) and [yarn](https://yarnpkg.com/en/docs/install). Don't have them ? [use this bash function instead of sao](./docs/alternative-bash-function.md))
+- NodeJS 10+ ([installation instructions](https://nodejs.org/en/download/package-manager/))
+- yarn (or npm) ([installation instructions](https://yarnpkg.com/en/docs/install))
+- [saojs](https://saojs.org/guide/getting-started.html). All it does is copy an existing repo/branch into a fresh repo on your machine.
+    - Install by running `yarn global add sao`
+    - (or `npm i -g sao`)
+    - (or [use this bash function instead of sao](./docs/alternative-bash-function.md))
 
 
 ## Usage
