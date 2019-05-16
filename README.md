@@ -32,9 +32,9 @@ Each branch of this project holds a different scaffold:
 - react-static with tailwindCSS: `sao nmrshll/frontend-scaffolds#react-static-tailwind`
 - react-static: `sao nmrshll/frontend-scaffolds#react-static`
 - react-static, apollo-graphql: `sao nmrshll/frontend-scaffolds#react-static-graphql`
-- for CRA3+jest+enzyme: `sao nmrshll/frontend-scaffolds#cra3-jest-enzyme`
-- CRA3, tests, unstated3: `sao nmrshll/frontend-scaffolds#cra3-unstated`
-- CRA3, tests, unstated3, tailwind: `sao nmrshll/frontend-scaffolds#cra3-unstated-tailwind`
+- CRA3, testing: `sao nmrshll/frontend-scaffolds#cra3-jest-enzyme`
+- CRA3, testing, unstated3: `sao nmrshll/frontend-scaffolds#cra3-unstated`
+- CRA3, testing, unstated3, tailwind: `sao nmrshll/frontend-scaffolds#cra3-unstated-tailwind`
 
 Master has a create-react-app 2.0 setup: `sao nmrshll/frontend-scaffolds`
 
