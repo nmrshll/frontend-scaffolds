@@ -13,7 +13,7 @@ let CounterState = createContainer(useCounter);
 function CounterDisplay() {
   let counter = CounterState.useContainer();
   return (
-    <div>
+    <div className="p-6 bg-purple-800">
       <button onClick={counter.decrement}>-</button>
       <span>{counter.count}</span>
       <button onClick={counter.increment}>+</button>

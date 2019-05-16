@@ -1,5 +1,6 @@
 import React from "react";
 import { Counters } from "./components/molecules/Counter";
+import "./styles/css/tailwind.css";
 
 const App = () => (
   <div className="App">
