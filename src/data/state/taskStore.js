@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
+import { useState } from "react";
+// import PropTypes from "prop-types";
 import { createContainer } from "unstated-next";
-// import { kea } from "kea";
-import { indexBy, mapObjIndexed, values, compose } from "ramda";
+import { mapObjIndexed, values, compose } from "ramda";
 //
 import { randomString } from "../../utils";
 
-const indexById = indexBy(o => o.id);
+// const indexById = indexBy(o => o.id);
 const indexedToArray = compose(
   values,
   mapObjIndexed((item, id) => ({ id, ...item }))

@@ -4,7 +4,7 @@ import styled from "styled-components";
 //
 import { TasksStore } from "../../data/state/taskStore";
 import IconBin from "../../assets/icons/IconBin";
-import { Button } from "../atoms/Button";
+import { Button } from "../atoms/Button/Button";
 
 const TodoItemStyled = styled.div`
   transition: all 0.3s;

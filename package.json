@@ -37,6 +37,7 @@
         ]
     },
     "devDependencies": {
+        "react-testing-library": "^7.0.0",
         "tailwindcss": "^1.0.1"
     },
     "bit": {
